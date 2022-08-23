@@ -1,0 +1,599 @@
+/* header */
+html::-webkit-scrollbar{
+    width: 10px;
+background-color:#ffffff;
+border-radius: 20px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(236, 172, 231);
+    height: 3px;
+    border-radius: 30px;
+}
+.wrapper{
+    max-width: 100%;
+    margin: 0px auto;
+}
+header{
+    position: fixed;
+    top:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.nav{
+    letter-spacing: 0.13rem;
+    position: relative;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-size:2rem;
+    font-weight: var(--font-weight);
+    line-height: 2rem;
+    box-shadow: 3px 3px 3px rgb(70, 70, 70, 0.7);
+    opacity: 0.9;
+}
+nav ul {
+    color: #000000;
+    margin-top:1.5rem;
+    display: flex;
+    list-style: none;
+}
+nav ul.home{
+    color: #000000;
+    margin-top:1.5rem;
+    position: absolute;
+    left:0;
+}
+nav ul b {
+    font-weight: 700px;
+}
+nav ul.support {
+ position: absolute;
+ right: 0;
+}
+nav ul li {
+padding: 0px 0.5rem 0px;
+list-style: none;
+}
+nav ul li a {
+text-decoration: none;
+color: var(--text-color);
+padding: 0.8rem 1.6rem;
+}
+nav ul li:hover .a0{
+background-color: var(--text-hover);
+color: yellow;
+}
+
+nav ul li:hover .a1{
+   background-color: var(--text-hover);
+   color: green;
+    }
+
+    nav ul li:hover .a2{
+       background-color: var(--text-hover);
+      color:red;
+        }
+
+     nav ul li:hover .a3{
+         background-color: var(--text-hover);
+        color:blue;
+            }
+/* container1 */
+.container1 img {
+    display: flex;
+ position: relative;
+}
+.container1 .dis {
+    position: absolute;
+   top: 50%;
+   bottom: 50%;
+   left: 45%;
+   right: 50%;
+    font-size: 3rem;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container1 div h1{
+    font-weight:700;
+    font-style: bold;
+    padding: 0.6rem 1.2rem;
+    display: inline-block;
+    font-size: 5rem;
+    background-color: #343637;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* content */
+.content {
+width: 100%;
+}
+.content .div 
+{
+    width: 100%;
+    font-family: arial;
+    font-size: 2.4rem;
+    font-weight: 40rem;
+    line-height: 36px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.content .div p{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 3rem;
+border-bottom: 1px solid rgba(109, 107, 107, 0.3);
+}
+.img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.0rem;
+    padding-right: 1.5rem;
+}
+
+.img .img__wrapper1,
+.img .img__wrapper2{
+    display: flex;
+    width:100%;
+}
+.img .img__wrapper1 div,
+.img .img__wrapper2 div{
+    width:100%;
+    height: auto;
+}
+
+.img .img__wrapper1 div,
+.img .img__wrapper2 div{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.img .img__wrapper1 div img,
+.img .img__wrapper2 div img{
+    height: 208px;
+}
+
+.img .img__wrapper1 div div,
+.img .img__wrapper2 div div {
+    position: absolute;
+      top: 0px;
+      left: 0px;
+      width:120px;
+      display: block;
+}
+.img .img__wrapper1 div div p,
+.img .img__wrapper2 div div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    line-height: 23px;
+    font-weight: 400;
+    background-color: #000000;
+    color: white;
+    padding:8px 16px;
+}
+.about__wrapper{
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 14rem;
+}
+.about__wrapper .about {
+     margin: 30px 0px 10px 0px;
+     padding: 16px 1.1rem;
+}
+.about__wrapper .about>p{
+font-size: 24px;
+font-weight: 400px;
+color:#000;
+line-height: 36px;
+padding-left: 17px;
+}
+.about__wrapper .text{
+    font-weight: 400;
+    list-style: none;
+    line-height: 23px;
+    font-size: 15px;
+     font-style: normal;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     margin: 15px 0px;
+     padding:0px 3rem;
+}
+/* character */
+#character{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    gap: 10px;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+#character .character__img img{
+    color:#838485;
+    padding-top: 100px;
+}
+#character .character{
+ display: inline-block;
+}
+.character .character__text .character__name{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.character .character__text .character__junior{
+    font-size: 15px;
+    line-height: 23px;
+    color: #343637;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.character .character__text .character__discription{
+    font-size: 15px;
+    line-height: 23px;
+    color: #343637;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.character button{
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 0px 50px;
+    transform: 0.4s;
+
+}
+.character button:hover{
+background-color: #CCC;
+cursor: pointer;
+}
+/* contact */
+.contact__wrapper{
+    width: 100%;
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+.contact__wrapper .contact{
+    border-bottom: 1px solid rgba(109, 107, 107, 0.3);
+font-size: 24px;
+line-height: 36px;
+font-weight: 400;
+font-style: normal;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact__wrapper .contact__input {
+    display: flex;
+    flex-direction: column;
+}
+.contact__wrapper .contact__input .contact__discript{
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#000;
+}
+.contact__wrapper .contact__input  div{
+    padding-top: 10px;
+}
+.contact__wrapper .contact__input  div input{
+    border: 0.5px solid rgb(184, 179, 179, 0.5); 
+    width: 100%;
+}
+.contact__wrapper .contact__input div input:focus{
+border:solid 1px rgb(0, 0, 0);
+}
+.contact__wrapper .contact__input .submit{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+.contact__wrapper .contact__input .submit button{
+width: 150px;
+height: 30px;
+background-color: #000;
+color: #fff;
+font-size: 15px;
+line-height: 30px;
+font-weight: 400;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+border-radius: 10px;
+}
+.contact__wrapper .contact__input .submit button:hover{
+    background-color: #fff;
+    color:#000;
+    transition-delay: 0.2s;
+    transform-origin: 2px;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    background-size: cover;
+    padding-left: 3rem;
+    padding-right: 3.6rem;
+    padding-top: 30px;
+}
+.footer__text{
+    margin: 0px auto;
+    display: block;
+   width: 96%;
+    height: 60px;
+    background-color: #333;
+     text-align: center;
+}
+.footer__text p {
+    padding-top: 23px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.footer__text p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.audio{
+    display: block;
+    padding-left: 550px;
+    padding-top: 40px;
+}
+ .p{
+    display:flex;
+    padding-left: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 23px;
+}
+/* season */
+.season__wrapper{
+display: flex;
+flex-direction: column;
+}
+.season__wrapper .season-header{
+    padding-top: 20px;
+   height: 50px;
+ padding-bottom: 70px;
+border-bottom: 1px solid rgba(109, 107, 107, 0.3);
+padding-left: 3rem;
+}
+.season__wrapper .season-header .season-text{
+ padding-top: 10px;
+font-size: 24px;
+line-height: 36px;
+font-weight: 400;
+font-family: Verdana, Geneva, sans-serif;
+}
+.season__wrapper .season__year{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-around;
+    justify-items:center;
+    gap:20px;
+}
+.season__year .spring__text{
+ padding-top: 30px;   
+ line-height: 23px;
+ font-size: 15px;
+font-weight: 400;
+font-family: Verdana, Geneva, sans-serif;
+text-align: center;
+}
+.season__year img{
+    width: 100%;
+    height: 180px;
+}
+.season__year .spring1__text{
+    color: rgb(122, 124, 10);
+}
+.season__year .Summer__text{
+    color:rgb(248, 110, 110);
+}
+.season__year .fall__text{
+    color: rgb(36, 194, 83);
+}
+.season__year .winter__text{
+    color: rgb(58, 22, 214);
+}
+.footer__text p a:hover{
+    color: rgb(29, 161, 170);
+}
+/* audio playlist */
+.audio__playlist{
+    border-radius: 50px;
+    padding:0px 3rem;
+   margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 100%;
+    height: 500px;
+    width: 100%;
+    height: 400px;
+    background-color:#2F2739;
+}
+.audio__playlist .title__audio{
+    color:#fff;
+    background-color:pink;
+    display: flex;
+    width: 200px;
+}
+.audio__playlist .title__audio p{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+.audio__playlist  .music-container{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+}
+.audio__playlist .music-container .menu{
+    display: block;
+    width: 22rem;
+}
+.audio__playlist .music-container .playlist__music{
+    border-radius: 20px;
+    background-color: burlywood;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    padding-left: 30px;
+    overflow-y: scroll;
+}
+.audio__playlist .music-container .playlist__music::-webkit-scrollbar{
+    width: 10px;
+}
+.audio__playlist .music-container .playlist__music::-webkit-scrollbar-track{
+background-color:rgb(198, 196, 207);
+border-radius: 10px;
+}
+.audio__playlist .music-container .playlist__music::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-radius: 10px;
+}
+.audio__playlist .music-container .playlist__music::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(60, 19, 87);
+    cursor: pointer;
+}
+
+.audio__playlist .music-container .playlist__music .song{
+  margin-top: 10px;
+    display: flex;
+    background-color: rgb(49, 16, 77);
+    width:980px;
+    height: 60px;
+   float: left;
+   border-radius: 10px;
+}
+.audio__playlist .music-container .playlist__music .song .audio{
+    display: none;
+}
+.audio__playlist .music-container .playlist__music .song .avt{
+    padding-top: 10px;
+    margin-top: 10px;
+    background-size: contain;
+}
+.audio__playlist .music-container .playlist__music .song .avt img{
+  border-radius: 10px;
+}
+.audio__playlist .music-container .playlist__music .song .info{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.audio__playlist .music-container .playlist__music .song .info div{
+    font-size: 14px;
+    font-weight: 700;
+    color:#fff;
+}
+.audio__playlist .music__playing{
+    display: block;
+    background-color: rgb(37, 12, 65);
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.music__playing .currentsong .audio{
+    display:none;
+}
+.music__playing .currentsong {
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    position: relative;
+}
+.music__playing .currentsong .songabout{
+    display: flex;
+    height: 100%;
+    width: 35%;
+}
+.music__playing .currentsong .songabout .avt{
+    width: 100px;
+    background-color: red;
+}
+.music__playing .currentsong .songabout .avt img{
+    width: 100%;
+    height: 100%;
+}
+.music__playing .currentsong .songabout .info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+}
+.music__playing .currentsong .songabout .content{
+    margin-right: 2em;
+}
+
+.music__playing .currentsong .play__container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.music__playing .currentsong .play__container  i{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color:var( --primary-color);
+}
+.music__playing .currentsong .play__container .fa-shuffle.start{
+    color:rgb(235, 64, 90);
+} 
+.music__playing .currentsong .play__container  .fa-angles-left.start{
+    color:rgb(235, 64, 90);
+} 
+.music__playing .currentsong .play__container .fa-play.start{
+    color:rgb(235, 64, 90);
+} 
+.music__playing .currentsong .play__container .fa-angles-right.start{
+    color:rgb(235, 64, 90);
+} 
+.music__playing .currentsong .play__container .fa-arrow-rotate-left.start{
+    color:rgb(235, 64, 90);
+} 
+.music__playing .currentsong .play__container  .music__time{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.music__playing .currentsong .play__container  .music__time .progressy{
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
